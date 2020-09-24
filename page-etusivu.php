@@ -21,7 +21,7 @@
 				<aside class="xiong-front-sidebar">
 					<?php
 						global $post;
-						$args = array( 'post_type'=> 'post' );
+						$args = array( 'post_type'=> array('post', 'calculators') );
 						$myposts = get_posts( $args );
 						foreach ( $myposts as $post ) : 
 						  setup_postdata( $post ); ?>

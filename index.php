@@ -6,16 +6,22 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="xiong-main-content">
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php
+						global $post;
+						$args = array( 'post_type'=> array('post', 'calculators') );
+						$myposts = get_posts( $args );
+						foreach ( $myposts as $post ) : 
+						  setup_postdata( $post ); ?>
 					
 						<?php get_template_part( 'templates/articlebox'); ?>
 
-				<?php endwhile; endif; ?>
+            <?php endforeach;
+						wp_reset_postdata(); ?>
 
 				<div class="xiong-pagination">
-					<center>
+					<div style="text-align: center;">
 						<?php get_template_part( 'templates/pagination'); ?>
-					</center>
+					</div>
 				</div><!--xiong-pagination -->
 
 			</div><!--main-content -->
