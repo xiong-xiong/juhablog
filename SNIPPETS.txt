@@ -1,0 +1,67 @@
+PERUSLOOPPI
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+<?php endwhile; else : ?>
+<?php endif; ?>
+
+
+<?php
+global $post;
+$args = array( 'posts_per_page' => 3, 'category_name' => 'blogi' );
+$myposts = get_posts( $args );
+foreach ( $myposts as $post ) : 
+  setup_postdata( $post ); ?>
+ 
+<!-- HTML TÄHÄN -->
+<a href="<?php the_permalink(); ?>"><h2><?php the_title();?></h2></a>
+<?php the_post_thumbnail(); ?>
+<p><?php the_excerpt(); ?></p>
+
+
+<?php endforeach;
+wp_reset_postdata(); ?>
+
+
+
+WP UQERY WITH PAGINATION
+
+
+<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$args = array( 'post_type' => 'post', 'category_name' => 'opetukset', 'orderby' => 'title', 'order' => 'ASC', 'posts_per_page' => 10, 'paged' => $paged );
+$wp_query = new WP_Query($args);
+while ( have_posts() ) : the_post(); ?>
+
+<!--HTML HERE -->
+
+
+<?php endwhile; ?>
+
+
+
+JOS TIETTY KATEGORIA ECHO JOTAIN
+
+<?php if ( in_category('freelance') ) {
+            echo "<i class='fa fa-user'></i> ";
+            }
+            else {
+              echo "<i class='fa fa-building'></i> ";
+              } ?>
+              
+
+JOS TIETTY TAGI ECHO JOTAIN
+ <?php if ( has_tag('wordpress') ) {
+            echo "<i class='fa fa-wordpress'></i> ";
+            }
+            else if ( has_tag('drupal') ){
+              echo "<i class='fa fa-drupal'></i> ";
+              } 
+              else {
+
+                }
+                ?>
+
+
+
+INCLUDE TEMPLATE PART
+
+<?php get_template_part( 'templates/test'); ?>

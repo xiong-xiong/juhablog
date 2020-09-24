@@ -1,0 +1,49 @@
+.xiong-single-article {
+  background: #fff;
+  margin: 10px 0px;
+  min-height: 80vh; }
+  .xiong-single-article .xiong-article-wrapper {
+    padding: 50px; }
+  .xiong-single-article img {
+    width: 100%;
+    max-width: 100%;
+    height: auto; }
+  .xiong-single-article ul {
+    padding: 20px 20px 20px 30px;
+    font-size: 17px;
+    min-height: 100px; }
+    .xiong-single-article ul:hover > center h3 {
+      color: #505050; }
+  .xiong-single-article strong, .xiong-single-article b {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif; }
+  .xiong-single-article .fa {
+    font-size: 25px;
+    padding: 0px 0px 15px 10px; }
+
+.xiong-post-sidebar {
+  min-height: 80vh;
+  background: #fff;
+  margin: 10px 0px;
+  display: block;
+  padding: 20px;
+  text-align: left; }
+  .xiong-post-sidebar h3 {
+    text-align: center; }
+  @media only screen and (max-width: 994px) {
+    .xiong-post-sidebar {
+      min-height: 100px; } }
+  .xiong-post-sidebar ul {
+    list-style: none;
+    padding: 0; }
+  .xiong-post-sidebar img {
+    max-width: 100%;
+    height: auto; }
+  .xiong-post-sidebar ol {
+    list-style-type: none;
+    padding: 0; }
+    .xiong-post-sidebar ol li {
+      padding: 15px;
+      background: whitesmoke; }
+
+/*# sourceMappingURL=single.css.map */

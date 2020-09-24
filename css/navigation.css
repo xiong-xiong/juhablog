@@ -1,0 +1,100 @@
+.xiong-main-nav {
+  height: 70px;
+  width: 100%;
+  background: #211717; }
+  @media only screen and (max-width: 768px) {
+    .xiong-main-nav {
+      height: auto; } }
+  .xiong-main-nav ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    padding-left: 15px; }
+    @media only screen and (max-width: 768px) {
+      .xiong-main-nav ul {
+        text-align: center;
+        padding-left: 0; } }
+    .xiong-main-nav ul li {
+      display: inline-block; }
+      @media only screen and (max-width: 768px) {
+        .xiong-main-nav ul li {
+          display: none;
+          width: 100%; } }
+      .xiong-main-nav ul li a {
+        font-size: 20px;
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding: 0px 15px;
+        line-height: 70px;
+        color: #fff;
+        height: 70px;
+        display: block;
+        width: 100%; }
+        .xiong-main-nav ul li a:hover {
+          text-decoration: none;
+          background: #fff;
+          color: #211717; }
+    .xiong-main-nav ul .current-menu-item a {
+      background: #fff;
+      color: #211717; }
+
+.xiong-open-mobile-nav {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 0px 15px;
+  line-height: 70px;
+  color: #fff;
+  height: 70px;
+  display: block;
+  text-align: center;
+  display: none; }
+  @media only screen and (max-width: 768px) {
+    .xiong-open-mobile-nav {
+      display: block; } }
+
+.xiong-meta-nav {
+  background: transparent; }
+  .xiong-meta-nav .menu {
+    display: block !important; }
+  @media only screen and (max-width: 768px) {
+    .xiong-meta-nav {
+      display: none; } }
+  .xiong-meta-nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0; }
+    .xiong-meta-nav ul li {
+      display: inline-block; }
+      @media only screen and (max-width: 768px) {
+        .xiong-meta-nav ul li {
+          display: block; } }
+      .xiong-meta-nav ul li a {
+        font-size: 15px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        padding: 0px 15px;
+        line-height: 40px;
+        color: #fff;
+        height: 40px;
+        display: block; }
+        .xiong-meta-nav ul li a:hover {
+          text-decoration: none;
+          background: #fff;
+          color: black; }
+
+.xiong-sidebar-nav ul {
+  text-align: left;
+  list-style: none; }
+  .xiong-sidebar-nav ul li a {
+    display: block;
+    background: whitesmoke;
+    padding: 20px; }
+  .xiong-sidebar-nav ul li ul li a {
+    background: #505050;
+    display: block;
+    color: #fff; }
+
+/*# sourceMappingURL=navigation.css.map */

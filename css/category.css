@@ -1,0 +1,111 @@
+.xiong-articlebox {
+  display: block;
+  text-align: left;
+  background: whitesmoke;
+  color: #211717;
+  padding: 20px;
+  margin: 0px 0px 5px 0px; }
+  .xiong-articlebox h3 {
+    font-size: 25px;
+    font-weight: 400; }
+  .xiong-articlebox .cat-icon {
+    font-size: 30px; }
+  .xiong-articlebox:hover {
+    background: #211717;
+    color: #fff; }
+  .xiong-articlebox:hover .xiong-advanced, .xiong-articlebox:hover .xiong-basics, .xiong-articlebox:hover .xiong-expert, .xiong-articlebox:hover .xiong-intermediate {
+    background: #fff;
+    color: #211717; }
+
+.xiong-highlight-label {
+  position: absolute;
+  right: -10px;
+  top: 8px;
+  background: #211717;
+  color: #fff;
+  padding: 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  border: 2px dotted #fff; }
+  @media screen and (max-width: 768px) {
+    .xiong-highlight-label {
+      right: 0px; } }
+
+.xiong-bookbox {
+  display: block;
+  text-align: left;
+  background: whitesmoke;
+  color: #211717;
+  padding: 20px;
+  margin: 0px 0px 5px 0px;
+  position: relative; }
+  .xiong-bookbox h3 {
+    font-size: 25px;
+    font-weight: 400; }
+  .xiong-bookbox .cat-icon {
+    font-size: 30px; }
+  .xiong-bookbox:hover {
+    opacity: 0.9; }
+
+.xiong-basics, .xiong-intermediate, .xiong-advanced, .xiong-expert, .xiong-book-sub-cat {
+  display: inline-block;
+  background: #211717;
+  color: #fff;
+  margin-left: 10px;
+  padding: 1px 7px; }
+
+.xiong-book-sub-cat {
+  margin-right: 10px; }
+
+#comingsoon {
+  text-align: center;
+  margin-top: 20vh;
+  text-transform: uppercase; }
+
+.xiong-filters {
+  padding: 0;
+  padding-top: 25px;
+  font-family: "Raleway", sans-serif; }
+  .xiong-filters li {
+    display: inline-block;
+    padding: 0px 20px;
+    background: #00aa00;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 5px; }
+    .xiong-filters li a {
+      color: white;
+      height: 40px;
+      display: block; }
+  .xiong-filters .current-cat {
+    background: #211717; }
+
+.topbooks {
+  margin-left: 0;
+  padding-right: 0;
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center; }
+  .topbooks img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 10px auto; }
+  .topbooks li {
+    padding: 15px;
+    margin: 5px;
+    background: whitesmoke;
+    counter-increment: xiong-counter; }
+
+.topbooks li::before {
+  content: counter(xiong-counter);
+  margin-right: 5px;
+  font-size: 30px;
+  background-color: #00aa00;
+  color: white;
+  font-weight: bold;
+  padding: 3px 12px;
+  border-radius: 30px; }
+
+/*# sourceMappingURL=category.css.map */

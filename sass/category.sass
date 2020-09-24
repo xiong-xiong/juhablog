@@ -1,0 +1,32 @@
+@charset "utf-8"
+
+@import "variables.sass"
+
+.xiong-articlebox
+	font-family: $headlinefont
+	display: block
+	text-align: left
+	background: $grey
+	color: $black
+	padding: 20px
+	margin: 0px 0px 5px 0px
+	h3
+		font-size: 25px
+		font-weight: 400
+	.cat-icon
+		font-size: 30px
+	&:hover
+		background: $black
+		color: $white
+	&:hover .xiong-advanced, &:hover .xiong-basics, &:hover .xiong-expert, &:hover .xiong-intermediate
+		background: $white
+		color: $black
+
+.xiong-basics, .xiong-intermediate, .xiong-advanced, .xiong-expert
+	display: inline-block
+	background: $black
+	color: white 
+	margin-left: 10px
+	padding: 1px 7px
+
+

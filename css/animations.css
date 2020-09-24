@@ -1,0 +1,102 @@
+.typed-cursor {
+  font-size: 50px;
+  padding-left: 6px;
+  opacity: 1;
+  -webkit-animation: blink 0.9s infinite;
+  animation: blink 0.8s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes basicsanimation {
+  from {
+    padding-right: 7px; }
+  to {
+    padding-right: 19px; } }
+@keyframes basicsanimation {
+  from {
+    padding-right: 7px; }
+  to {
+    padding-right: 19px; } }
+@-webkit-keyframes intermediateanimation {
+  from {
+    padding-right: 7px; }
+  to {
+    padding-right: 40px; } }
+@keyframes intermediateanimation {
+  from {
+    padding-right: 7px; }
+  to {
+    padding-right: 40px; } }
+@-webkit-keyframes advancedanimation {
+  from {
+    padding-right: 7px; }
+  to {
+    padding-right: 80px; } }
+@keyframes advancedanimation {
+  from {
+    padding-right: 7px; }
+  to {
+    padding-right: 80px; } }
+@-webkit-keyframes expertanimation {
+  from {
+    padding-right: 7px; }
+  to {
+    padding-right: 140px; } }
+@keyframes expertanimation {
+  from {
+    padding-right: 7px; }
+  to {
+    padding-right: 140px; } }
+.xiong-articlebox:hover .xiong-basics {
+  -webkit-animation-name: basicsanimation;
+          animation-name: basicsanimation;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.xiong-articlebox:hover .xiong-intermediate {
+  -webkit-animation-name: intermediateanimation;
+          animation-name: intermediateanimation;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.xiong-articlebox:hover .xiong-advanced {
+  -webkit-animation-name: advancedanimation;
+          animation-name: advancedanimation;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.xiong-articlebox:hover .xiong-expert {
+  -webkit-animation-name: expertanimation;
+          animation-name: expertanimation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+/*# sourceMappingURL=animations.css.map */

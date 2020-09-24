@@ -1,0 +1,36 @@
+@charset "utf-8"
+
+@import "variables.sass"
+
+.xiong-searchform
+	padding-top: 50px
+	label
+		display: none
+	#searchsubmit
+		background: $white
+		border: 0
+		color: $black
+		text-transform: uppercase
+		height: 40px
+		padding: 5px 10px 0px 10px
+		margin: 0 !important
+		font-size: 19px
+		&:hover
+			opacity: 0.9
+	#s 
+		border: 0
+		width: 70%
+		height: 40px
+		text-align: center
+		margin: 0 !important
+		padding: 0
+		font-size: 25px
+		font-weight: 300
+		&:active, &:focus
+			background: $black
+			border: 3px solid $brand1
+			color: $white
+		@media only screen and (max-width: 780px)
+			width: 60vw
+	#searchform 
+		text-align: center

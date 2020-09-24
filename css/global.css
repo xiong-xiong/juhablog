@@ -1,0 +1,89 @@
+.row {
+  max-width: 100%;
+  margin: 0; }
+
+body {
+  background: url("img/body.jpg");
+  background-size: cover;
+  repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; }
+
+.container {
+  width: 80%;
+  max-width: 1200px; }
+  @media only screen and (max-width: 768px) {
+    .container {
+      width: 96%;
+      padding: 0; } }
+
+a {
+  color: #211717; }
+  a:hover {
+    color: #505050;
+    text-decoration: none; }
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+  font-family: "Raleway", sans-serif; }
+
+p {
+  font-size: 17px; }
+
+.xiong-hero {
+  height: 200px;
+  background: #211717;
+  opacity: 0.9;
+  z-index: 90; }
+  @media screen and (max-width: 1000px) {
+    .xiong-hero {
+      height: 250px; } }
+  @media screen and (max-width: 768px) {
+    .xiong-hero {
+      height: 200px; } }
+
+img {
+  width: 100%;
+  max-width: 100%; }
+
+#xiong-site-logo {
+  padding-top: 10px; }
+  #xiong-site-logo h1 {
+    font-size: 50px;
+    display: inline; }
+  #xiong-site-logo a:link, #xiong-site-logo a:visited {
+    color: #fff; }
+  @media screen and (max-width: 768px) {
+    #xiong-site-logo {
+      text-align: center; } }
+  #xiong-site-logo i {
+    font-size: 60px; }
+
+.xiong-pagination .page-numbers {
+  width: 30px;
+  height: 30px;
+  background: #00aa00;
+  color: #fff;
+  line-height: 30px;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300px;
+  text-transform: uppercase; }
+  .xiong-pagination .page-numbers:hover {
+    background: #211717; }
+.xiong-pagination .current {
+  background: #211717; }
+.xiong-pagination .next, .xiong-pagination .prev {
+  width: auto;
+  padding: 0px 20px; }
+
+.xiong-main-content {
+  background: #fff;
+  margin: 10px 0px;
+  padding: 15px;
+  min-height: 80vh; }
+  .xiong-main-content img {
+    max-width: 100%;
+    height: auto; }
+
+/*# sourceMappingURL=global.css.map */

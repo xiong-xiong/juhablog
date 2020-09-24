@@ -1,0 +1,74 @@
+/*
+Theme Name: JuhaBlog-Bootstrap
+Theme URI: http://juha.blog
+Author: Juha Stenroos
+Author URI: http://juhastenroos.fi
+Description: Tämä on Juha.Blog blogin teema
+Version: 13.4.17
+*/
+/*
+
+xx      xx    xx    xxxxxxxx    xxx     xx   xxxxxxxxx
+ xx    xx     xx    xx    xx    xxxx    xx   xx
+  xx  xx      xx    xx    xx    xx xx   xx   xx
+   xxxx       xx    xx    xx    xx  xx  xx   xx   xxxx
+  xx  xx      xx    xx    xx    xx   xx xx   xx     xx
+ xx    xx     xx    xx    xx    xx    xxxx   xx     xx
+xx      xx    xx    xxxxxxxx    xx     xxx   xxxxxxxxx
+
+xx      xx    xx    xxxxxxxx    xxx     xx   xxxxxxxxx
+ xx    xx     xx    xx    xx    xxxx    xx   xx
+  xx  xx      xx    xx    xx    xx xx   xx   xx
+   xxxx       xx    xx    xx    xx  xx  xx   xx   xxxx
+  xx  xx      xx    xx    xx    xx   xx xx   xx     xx
+ xx    xx     xx    xx    xx    xx    xxxx   xx     xx
+xx      xx    xx    xxxxxxxx    xx     xxx   xxxxxxxxx    
+
+
+                _     _     ||
+               (o\---/o)    || 
+                ( - - )    |xx|
+               _( (T) )_ __|__|__
+              / /     \ \/ / 
+             / /       \__/
+             \_)       / 
+               \   _  /
+               _)  |  (_
+              (___,'.___)
+
+*/
+/*
+README
+
+Styles:
+- All styles are made with SaSS. Please edit SaSS files at sass folder
+- You need a SaSS preprocessor to edit styles. 
+- Grid system comes from bootstrap.min.css 
+- Authors own classes are prefixed xiong-
+- Classes created by Wordpress are in wp-classes.sass
+
+Scripts:
+- Bootstrap js is included but by default not initiliazed
+- jQuery is included in wordpress itself and uses safe mode
+(jQuery instead of $)
+- Please add your scripts to js folder and initialize them at functions.php
+
+
+*/
+
+
+@import url("css/normalize.css");
+@import url("css/bootstrap.min.css");
+@import url("css/font-awesome.min.css");
+@import url("css/wp-classes.css");
+@import url("css/global.css");
+@import url("css/navigation.css");
+@import url("css/footer.css");
+@import url("css/single.css");
+@import url("css/page.css");
+@import url("css/frontpage.css");
+@import url("css/search.css");
+@import url("css/category.css");
+@import url("css/animations.css");
+
+

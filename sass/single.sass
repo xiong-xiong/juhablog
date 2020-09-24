@@ -1,0 +1,55 @@
+@charset "utf-8"
+
+@import "variables.sass"
+
+
+.xiong-single-article
+	background: $white
+	margin: 10px 0px
+	min-height: 80vh
+	.xiong-article-wrapper
+		padding: 50px
+	img
+		width: 100% 
+		max-width: 100%
+		height: auto
+	ul
+		padding: 20px 20px 20px 30px
+		font-size: $fontsize
+		min-height: 100px
+		&:hover > center h3 
+			color: $dark
+	strong, b
+		font-size: 20px
+		font-family: $headlinefont
+	.fa
+		font-size: 25px
+		padding: 0px 0px 15px 10px
+
+
+.xiong-post-sidebar
+	min-height: 80vh
+	background: $white
+	margin: 10px 0px
+	display: block
+	padding: 20px
+	text-align: left
+	@media only screen and (max-width: 994px)
+		min-height: 100px
+	ul
+		list-style: none
+		padding: 0
+	img 
+		max-width: 100%
+		height: auto
+	ol 
+		list-style-type: none
+		padding: 0
+		li 
+			padding: 15px
+			background: $grey
+			border-right: 2px solid $brand1
+
+
+
+

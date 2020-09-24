@@ -1,0 +1,27 @@
+.xiong-front-sidebar .xiong-articlebox {
+  background: whitesmoke;
+  margin: 10px 0px;
+  display: block; }
+  .xiong-front-sidebar .xiong-articlebox:hover {
+    opacity: 0.8; }
+  .xiong-front-sidebar .xiong-articlebox img {
+    width: 100%;
+    height: auto; }
+
+.xiong-front-sidebar {
+  min-height: 2180px;
+  background: #fff;
+  margin: 10px 0px;
+  display: block;
+  padding: 20px;
+  min-height: 80vh; }
+  @media only screen and (max-width: 994px) {
+    .xiong-front-sidebar {
+      min-height: 100px; } }
+  .xiong-front-sidebar ul {
+    list-style: none;
+    padding: 0; }
+  .xiong-front-sidebar h3 {
+    text-align: center; }
+
+/*# sourceMappingURL=frontpage.css.map */

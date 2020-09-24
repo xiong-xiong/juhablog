@@ -1,0 +1,91 @@
+@charset "utf-8"
+
+@import "variables.sass"
+
+.row
+	max-width: 100%
+	margin: 0
+
+body
+	background: url('img/body.jpg')
+	background-size: cover
+	repeat: no-repeat
+	background-position: center center
+	background-attachment: fixed
+
+.container
+	width: 80%
+	max-width: 1200px
+	@media only screen and (max-width: 768px)
+		width: 100%
+		padding: 0
+
+a 
+	color: $black
+	&:hover
+		color: $dark
+		text-decoration: none
+
+h1, h2, h3, h4
+	font-weight: 300
+	font-family: $headlinefont
+
+p 
+	font-size: $fontsize
+
+.xiong-hero
+	height: 200px
+	background: $black
+	opacity: 0.9
+	z-index: 90
+	@media screen and (max-width: 1000px)
+		height: 250px
+	@media screen and (max-width: 768px)
+		height: 200px
+		
+
+img
+	max-width: 100%
+
+#xiong-site-logo
+	padding-top: 10px
+	h1
+		font-size: 50px
+		display: inline
+	a:link, a:visited 
+		color: $white
+	@media screen and (max-width: 768px)
+		text-align: center
+
+.xiong-pagination
+	.page-numbers
+		width: 30px
+		height: 30px
+		background: $brand1
+		color: $white
+		line-height: 30px
+		display: inline-block
+		font-family: $menufont
+		font-weight: 300px
+		text-transform: uppercase
+		&:hover
+			background: $black
+	.current
+		background: $black
+	.next, .prev 
+		width: auto
+		padding: 0px 20px
+
+
+
+.xiong-main-content
+	background: $white
+	margin: 10px 0px
+	padding: 15px
+	min-height: 80vh
+	img 
+		max-width: 100%
+		height: auto
+
+
+

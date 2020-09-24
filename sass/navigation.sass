@@ -1,0 +1,99 @@
+@charset "utf-8"
+
+@import "variables.sass"
+
+.xiong-main-nav
+	height: 70px
+	width: 100%
+	background: $black
+	@media only screen and (max-width: 768px)
+		height: auto
+	ul
+		list-style: none
+		text-align: left
+		padding: 0
+		padding-left: 15px
+		@media only screen and (max-width: 768px)
+			text-align: center
+			padding-left: 0
+		li 
+			display: inline-block
+			@media only screen and (max-width: 768px)
+				display: none
+			a
+				font-size: 20px
+				font-family: $menufont
+				text-transform: uppercase
+				font-weight: 300
+				padding: 0px 15px
+				line-height: 70px
+				color: $white
+				height: 70px
+				display: block
+				&:hover
+					text-decoration: none
+					background: $white
+					color: $black
+		.current-menu-item
+			a 
+				background: $white
+				color: $black
+
+.xiong-open-mobile-nav
+	font-size: 20px
+	font-family: $menufont
+	text-transform: uppercase
+	font-weight: 300
+	padding: 0px 15px
+	line-height: 70px
+	color: $white
+	height: 70px
+	display: block
+	text-align: center
+	display: none
+	@media only screen and (max-width: 768px)
+		display: block
+
+.xiong-meta-nav
+	background: transparent
+	@media only screen and (max-width: 768px)
+		display: none	
+	ul
+		list-style: none
+		text-align: center
+		padding: 0
+		li 
+			display: inline-block
+			@media only screen and (max-width: 768px)
+				display: block
+			a
+				font-size: 15px
+				font-family: $menufont
+				font-weight: 300
+				padding: 0px 15px
+				line-height: 40px
+				color: $white
+				height: 40px
+				display: block
+				&:hover
+					text-decoration: none
+					background: $white
+					color: black
+
+.xiong-sidebar-nav
+	ul
+		text-align: left
+		list-style: none
+		li 
+			a 
+				display: block
+				background: $grey
+				padding: 20px
+			ul
+				li 
+					a  
+						background: $dark
+						display: block
+						color: $white
+
+
