@@ -1,7 +1,7 @@
  <footer>
   <div class="container">
     <div class="row">
-      <p>Copyright © 2017 Juha Stenroos | Theme by <a href="http://juhastenroos.fi" target="_blank">Juha Stenroos</a></p>
+      <p>Copyright © 2020 Juha Stenroos | Theme by Juha Stenroos</a></p>
 
     </div><!-- row-->
   </div><!--row -->

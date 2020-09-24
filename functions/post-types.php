@@ -139,3 +139,69 @@ function jst_register_projects_post_type () {
   
   add_action('init', 'jst_register_projects_post_type' );
   
+
+  
+// Calculators
+
+function jst_register_calculators_post_type () {
+
+  //Variables
+  $singular = 'calculator';
+  $plural = 'calculators';
+  $object = 'calculator';
+  $labels = array(
+  'name'                  => $plural, 
+  'singular_name'         => $singular,
+  'add_name'              => 'Add new',
+  'add_new_item'          => 'Add new ' . $singular,
+  'edit'                  => 'Edit',
+  'edit_item'             => 'Edit ' . $object,
+  'new_item'              => 'New ' .$singular,
+  'view'                  => 'Show ' . $singular,
+  'view_item'             => 'Show ' . $singular,
+  'search_term'           => 'Search ' . $object,
+  'not_found'             => 'Could not find ' . $object,  
+  'not_found_in_trash'    => 'Could not find ' . $object . ' from trash'
+  
+  );
+  
+  $args = array(
+  'labels'    => $labels,
+  'public'    => true,
+  'show_in_rest' => true,
+  'publicly_queryable' => true,
+  'exclude_from_search'=> true,
+  'show_ui'            => true,
+  'show_in_menu'       => true,
+  'show_in_admin_bar'  => true,
+  'menu_position'      => 20,
+  'menu_icon'          => 'dashicons-calculator',
+  'can_export'         => true,
+  'delete_with_user'   => false,
+  'hierarchical'       => false,
+  'has_archive'        => true, 
+  'query_var'          => true,
+  'capability_type'    => 'post',
+  'map_meta_cap'       => true,
+  'taxonomies'         => array(),
+  'rewrite'            => array( 
+          'slug'          => 'calculators', 
+          'with_front'    => true,
+          'pages'         => false, //sivutus sallittu
+          'feeds'         => false //rss sisällyttäminen
+      ),
+  'supports'           => array( 
+              'title',
+              'editor',
+              'thumbnail',
+              'excerpt',
+              'custom-fields',
+              'revisions',
+      )
+  );
+  
+  
+  register_post_type('calculators', $args );
+  }
+  
+  add_action('init', 'jst_register_calculators_post_type' );

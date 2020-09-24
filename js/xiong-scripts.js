@@ -14,6 +14,12 @@
 
 jQuery('section').css('display', 'none').fadeIn(1200);      
 
+if(typeof iFrameResize === "function") {
+  iFrameResize({
+  log: false,
+
+}, '#calculator');
+}
 
 
 

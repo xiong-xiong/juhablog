@@ -9,7 +9,7 @@
         ?>
     </title>
     <!--Important for mediaqueries to work properly-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <!-- Head info from Wordpress -->
     <?php wp_head();?>
     <!-- Link style.css -->
